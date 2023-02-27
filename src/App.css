@@ -1,0 +1,123 @@
+
+/* CSS */
+.wrapper {
+display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header,
+footer {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: auto;
+}
+
+.body-wrapper {
+  flex-grow: 1;
+}
+
+header{
+  padding: 2% 0px 1%;
+    text-align: center;
+    background: #405cf5;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 4%;
+}
+
+ul{
+  display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin:0;
+    padding: 0
+}
+
+li{
+list-style: none
+;}
+
+.form-wrapper{
+  display: flex;
+      justify-content: center;
+}
+
+.btn-wrapper{
+  display: flex;
+  margin: 0 3%;
+  justify-content: center;
+  gap: 2%;
+}
+button {
+  flex-direction: row;
+  flex: 1;
+  appearance: button;
+  backface-visibility: hidden;
+  background-color: #405cf5;
+  border-radius: 6px;
+  border-width: 0;
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .1) 0 2px 5px 0, rgba(0, 0, 0, .07) 0 1px 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Ubuntu, sans-serif;
+  font-size: 100%;
+  height: 44px;
+  line-height: 1.15;
+  margin: 12px 0 0;
+  outline: none;
+  overflow: hidden;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transform: translateZ(0);
+  transition: all .2s, box-shadow .08s ease-in;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+}
+
+button:disabled {
+  cursor: default;
+}
+
+button:hover {
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
+}
+
+
+input{
+font-size: 14px;
+border-radius: 6px;
+line-height: 1.5;
+padding: 5px 10px;
+transition: box-shadow 100ms ease-in,
+border 100ms ease-in,
+background-color 100ms ease-in;
+border: 2px solid #dee1e2;
+color: rgb(14, 14, 16);
+background: #dee1e2;
+display: block;
+height: 36px;
+flex: 1;
+margin:2%
+}
+
+input:hover {
+  border-color: #ccc;
+}
+
+input:focus {
+  border-color: #9147ff;
+  background: #fff;
+}
+
+footer{
+  background: #405cf5;
+  color: white;
+  text-align: center;
+  padding: 1%;
+}
